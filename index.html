@@ -14,33 +14,32 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f4;
+            background: #f3f4f6;
             color: #222;
             line-height: 1.6;
         }
 
-        .resume-container {
-            max-width: 1000px;
+        .page {
+            max-width: 1040px;
             margin: 40px auto;
             background: #fff;
-            display: grid;
-            grid-template-columns: 320px 1fr;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 42px;
+            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.09);
         }
 
-        .sidebar {
-            background: #1f2933;
-            color: #fff;
-            padding: 36px 28px;
+        .top-section {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 28px;
+            align-items: center;
+            margin-bottom: 42px;
         }
 
         .profile-photo {
-            width: 180px;
-            height: 180px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             overflow: hidden;
-            margin: 0 auto 24px;
-            border: 4px solid rgba(255, 255, 255, 0.3);
             background: #d9d9d9;
             display: flex;
             align-items: center;
@@ -58,84 +57,76 @@
         }
 
         .name {
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 6px;
+            font-size: 42px;
+            line-height: 1.1;
+            margin-bottom: 8px;
             letter-spacing: 0.5px;
+            color: #111827;
         }
 
         .title {
-            text-align: center;
-            font-size: 15px;
-            color: #cfd8dc;
-            margin-bottom: 28px;
+            font-size: 17px;
+            color: #4b5563;
+            margin-bottom: 16px;
         }
 
-        .sidebar-section {
-            margin-bottom: 28px;
-        }
-
-        .sidebar-section h2 {
-            font-size: 16px;
-            margin-bottom: 12px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-            padding-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .sidebar-section p,
-        .sidebar-section li,
-        .sidebar-section a {
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 18px;
             font-size: 14px;
-            color: #e5e7eb;
-            text-decoration: none;
+            color: #555;
         }
 
-        .sidebar-section ul {
-            list-style: none;
+        .portfolio-hero {
+            min-height: 520px;
+            background: #1f2933;
+            color: #fff;
+            border-radius: 28px;
+            padding: 38px;
+            margin-bottom: 42px;
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            text-align: center;
         }
 
-        .sidebar-section li {
-            margin-bottom: 8px;
-        }
-
-        .portfolio-card {
-            background: rgba(255, 255, 255, 0.08);
-            padding: 16px;
-            border-radius: 12px;
-            margin-top: 10px;
-        }
-
-        .portfolio-card p {
+        .portfolio-label {
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #cfd8dc;
             margin-bottom: 12px;
         }
 
-        .portfolio-button {
-            display: inline-block;
-            background: #ffffff;
-            color: #1f2933 !important;
-            padding: 10px 14px;
-            border-radius: 999px;
-            font-weight: bold;
-            font-size: 13px;
-            text-decoration: none;
+        .portfolio-title {
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+
+        .portfolio-text {
+            max-width: 620px;
+            margin: 0 auto 26px;
+            color: #e5e7eb;
+            font-size: 16px;
         }
 
         .portfolio-preview {
             width: 100%;
-            height: 150px;
-            border-radius: 10px;
+            max-width: 760px;
+            height: 360px;
+            margin: 0 auto 26px;
+            border-radius: 22px;
             background: #d9d9d9;
-            margin-top: 14px;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #555;
-            font-size: 13px;
+            font-size: 16px;
             text-align: center;
+            padding: 20px;
         }
 
         .portfolio-preview img {
@@ -145,96 +136,86 @@
             display: block;
         }
 
-        .main-content {
-            padding: 42px 46px;
+        .portfolio-button {
+            display: inline-block;
+            background: #fff;
+            color: #1f2933;
+            padding: 14px 28px;
+            border-radius: 999px;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
         }
 
-        .section {
-            margin-bottom: 34px;
+        .resume-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
         }
 
-        .section h2 {
-            font-size: 20px;
-            margin-bottom: 14px;
-            color: #111827;
-            border-bottom: 2px solid #1f2933;
-            padding-bottom: 8px;
+        .card {
+            background: #f8fafc;
+            border-radius: 18px;
+            padding: 22px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .card h2 {
+            font-size: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
-        }
-
-        .item {
-            margin-bottom: 20px;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            gap: 16px;
-            margin-bottom: 4px;
-        }
-
-        .item h3 {
-            font-size: 17px;
             color: #111827;
+            margin-bottom: 12px;
         }
 
-        .date {
+        .card p,
+        .card li {
             font-size: 14px;
-            color: #666;
-            white-space: nowrap;
+            color: #444;
         }
 
-        .company,
-        .school {
-            font-size: 15px;
-            color: #555;
-            margin-bottom: 8px;
+        .card ul {
+            list-style: none;
         }
 
-        .item ul {
-            padding-left: 20px;
-        }
-
-        .item li {
-            margin-bottom: 6px;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background: #eef2f7;
-            color: #1f2933;
-            padding: 8px 12px;
-            border-radius: 999px;
-            font-size: 14px;
-        }
-
-        .highlight-box {
-            background: #f8fafc;
-            border-left: 4px solid #1f2933;
-            padding: 16px;
-            margin-top: 12px;
-            border-radius: 6px;
+        .card li {
+            margin-bottom: 7px;
         }
 
         @media (max-width: 800px) {
-            .resume-container {
-                grid-template-columns: 1fr;
+            .page {
                 margin: 0;
+                padding: 28px;
             }
 
-            .main-content {
-                padding: 32px 24px;
+            .top-section {
+                grid-template-columns: 1fr;
+                text-align: center;
             }
 
-            .item-header {
-                flex-direction: column;
-                gap: 2px;
+            .profile-photo {
+                margin: 0 auto;
+            }
+
+            .contact {
+                justify-content: center;
+            }
+
+            .portfolio-hero {
+                padding: 28px;
+                min-height: auto;
+            }
+
+            .portfolio-title {
+                font-size: 30px;
+            }
+
+            .portfolio-preview {
+                height: 280px;
+            }
+
+            .resume-summary {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -243,173 +224,79 @@
                 background: #fff;
             }
 
-            .resume-container {
+            .page {
                 margin: 0;
                 box-shadow: none;
-            }
-
-            .portfolio-button {
-                border: 1px solid #1f2933;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="resume-container">
-        <aside class="sidebar">
+    <div class="page">
+        <header class="top-section">
             <div class="profile-photo">
-                <!-- Replace profile.jpg with your own photo path -->
+                <!-- Replace this with your own photo -->
                 <!-- Example: <img src="profile.jpg" alt="Della"> -->
                 Your Photo
             </div>
 
-            <h1 class="name">Della</h1>
-            <p class="title">Graphic Designer / UI Designer / Visual Designer</p>
-
-            <div class="sidebar-section">
-                <h2>Contact</h2>
-                <ul>
-                    <li>Email: della.user.primary@gmail.com</li>
-                    <li>Phone: +64 21 456 7890</li>
-                    <li>Location: Auckland, New Zealand</li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section">
-                <h2>Portfolio</h2>
-                <div class="portfolio-card">
-                    <p>Please view my design portfolio to see selected visual works, brand projects, UI designs, and
-                        photography-based concepts.</p>
-                    <a class="portfolio-button" href="work.png" target="_blank">View Portfolio</a>
-
-                    <div class="portfolio-preview">
-                        <!-- Replace portfolio-cover.jpg with your portfolio cover or project image -->
-                        Example: <img src="work.png" alt="Portfolio Preview">
-                        Portfolio Cover / Project Image
-                    </div>
+            <div>
+                <h1 class="name">Della</h1>
+                <p class="title">Visual Designer</p>
+                <div class="contact">
+                    <span>della.user.primary@gmail.com</span>
+                    <span>+64 21 456 7890</span>
+                    <span>Auckland, New Zealand</span>
                 </div>
             </div>
+        </header>
 
-            <div class="sidebar-section">
-                <h2>Tools</h2>
-                <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe InDesign</li>
-                    <li>Figma</li>
-                    <li>Canva</li>
-                </ul>
+        <section class="portfolio-hero">
+            <div>
+                <p class="portfolio-label">Selected Visual Work</p>
+                <h2 class="portfolio-title">Portfolio</h2>
+                <p class="portfolio-text">
+                    A closer view of my image direction, layout rhythm, colour choices, and presentation style.
+                </p>
+
+                <div class="portfolio-preview">
+                    <!-- Replace this with your portfolio cover or project image -->
+                    Example: <img src="work.png" alt="Portfolio Preview">
+                    Portfolio Cover / Project Image
+                </div>
+
+                <a class="portfolio-button" href="work.png" target="_blank">View Portfolio</a>
             </div>
+        </section>
 
-            <div class="sidebar-section">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English — Professional</li>
-                    <li>Chinese — Native</li>
-                </ul>
-            </div>
-        </aside>
-
-        <main class="main-content">
-            <section class="section">
+        <section class="resume-summary">
+            <div class="card">
                 <h2>Profile</h2>
                 <p>
-                    Creative and detail-oriented designer with experience in visual communication, branding, digital
-                    layout, and user-centered design. Skilled at transforming ideas into clear, attractive, and
-                    functional visual solutions. Passionate about combining design strategy, aesthetics, and
-                    storytelling to create meaningful work.
+                    Auckland-based visual designer focused on clean layouts, quiet brand atmosphere, and image-led
+                    storytelling.
                 </p>
-                <div class="highlight-box">
-                    <strong>Portfolio Note:</strong> For a better understanding of my design style and visual work,
-                    please refer to the portfolio section and view the attached project images.
-                </div>
-            </section>
+            </div>
 
-            <section class="section">
-                <h2>Work Experience</h2>
+            <div class="card">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Freelance Visual Designer, 2024 — Present</li>
+                    <li>Creative Assistant, Studio North, 2023 — 2024</li>
+                </ul>
+            </div>
 
-                <div class="item">
-                    <div class="item-header">
-                        <h3>Graphic Designer</h3>
-                        <span class="date">Month Year — Present</span>
-                    </div>
-                    <p class="company">Company Name — City, Country</p>
-                    <ul>
-                        <li>Designed marketing materials, social media visuals, posters, brochures, and brand assets.
-                        </li>
-                        <li>Developed visual concepts based on client needs, brand guidelines, and campaign goals.</li>
-                        <li>Collaborated with marketing and content teams to produce consistent and engaging visual
-                            communication.</li>
-                        <li>Prepared final design files for both digital publication and print production.</li>
-                    </ul>
-                </div>
-
-                <div class="item">
-                    <div class="item-header">
-                        <h3>Design Intern</h3>
-                        <span class="date">Month Year — Month Year</span>
-                    </div>
-                    <p class="company">Company Name — City, Country</p>
-                    <ul>
-                        <li>Assisted senior designers with layout design, image editing, and presentation materials.
-                        </li>
-                        <li>Created mood boards, visual references, and draft concepts for client projects.</li>
-                        <li>Organized image assets and maintained consistency across design files.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Education</h2>
-
-                <div class="item">
-                    <div class="item-header">
-                        <h3>Degree / Diploma in Design</h3>
-                        <span class="date">Year — Year</span>
-                    </div>
-                    <p class="school">School / University Name — City, Country</p>
-                    <p>Relevant coursework: Visual Communication, Typography, Branding, Digital Media, Photography, UI
-                        Design.</p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Selected Projects</h2>
-
-                <div class="item">
-                    <div class="item-header">
-                        <h3>Brand Identity Design</h3>
-                        <span class="date">Year</span>
-                    </div>
-                    <p>Created a complete visual identity system including logo design, color palette, typography, and
-                        application mockups.</p>
-                </div>
-
-                <div class="item">
-                    <div class="item-header">
-                        <h3>Portfolio Photography & Layout Project</h3>
-                        <span class="date">Year</span>
-                    </div>
-                    <p>Designed a visual portfolio layout that presents photography, image composition, and design
-                        concepts in a clean editorial style.</p>
-                </div>
-            </section>
-
-            <section class="section">
+            <div class="card">
                 <h2>Skills</h2>
-                <div class="skills-list">
-                    <span class="skill">Branding</span>
-                    <span class="skill">Layout Design</span>
-                    <span class="skill">Typography</span>
-                    <span class="skill">Photo Editing</span>
-                    <span class="skill">UI Design</span>
-                    <span class="skill">Print Design</span>
-                    <span class="skill">Social Media Design</span>
-                    <span class="skill">Visual Storytelling</span>
-                </div>
-            </section>
-        </main>
+                <ul>
+                    <li>Layout Design</li>
+                    <li>Image Editing</li>
+                    <li>Typography</li>
+                    <li>Figma / Adobe Photoshop</li>
+                </ul>
+            </div>
+        </section>
     </div>
 </body>
 
